@@ -1,0 +1,168 @@
+
+.calendar-wrapper {
+  width: calc(100% - 4rem);
+  height: calc(100vh - 4rem);
+  display: flex;
+  padding: 2rem;
+  background-color: #6d7489;
+}
+.calendar-wrapper .calendar-left {
+  padding-right: 2.5rem;
+}
+.calendar-wrapper .calendar-left img {
+  border-radius: 3px;
+}
+.calendar-wrapper .calendar-right {
+  border: 1px solid #F5F7FE;
+  width: 100%;
+  max-height: 60vh;
+  height: 60vh;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 3px;
+  padding: .5rem;
+  max-width: 900px;
+}
+.calendar-wrapper .calendar-right .card-time {
+  display: flex;
+  position: relative;
+}
+
+.calendar-wrapper .calendar-right .card-time:nth-child(even) {
+  background-color: #e7e9f9;
+}
+.calendar-wrapper .calendar-right .card-time .main-time {
+  border: 1px solid #F5F7FE;
+  border-radius: 2px;
+  padding: .25rem;
+  width: 75px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #4d5999;
+  transition: .25s ease-in-out;
+}
+.calendar-wrapper .calendar-right .card-time .main-time:hover{
+  border-color:#4f63cb;
+}
+
+.calendar-wrapper .calendar-right .card-time:hover .add-client {
+  display: flex;
+  transform: scale(1);
+}
+
+.calendar-wrapper .calendar-right .card-time .add-client {
+  background-color: white;
+  display: flex;
+  position: absolute;
+  left: 4rem;
+  top: -.5rem;
+  z-index: 1;
+  transition: .25s ease-in-out;
+  transform: scale(0);
+  cursor: pointer;
+  padding: 0 .25rem;
+  border-radius: 6px;
+}
+.calendar-wrapper .calendar-right .card-time .add-client i {
+  font-size: 2.25rem;
+  color: #4f63cb;
+  z-index: 999;
+}
+
+
+.calendar-wrapper .calendar-right .card-time .schedules {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #F5F7FE;
+}
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled {
+  border: 1px solid #F5F7FE;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: calc(100% - 0);
+}
+
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .time {
+  width: 75px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4d5999;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients .client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .25rem .75rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #4f63cb;
+  margin: .1rem 0 0;
+  transition: .15s ease-in-out;
+  min-height: 28.78px;
+}
+
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients .client:nth-child(even) {
+  background-color: #4f63cbd4;
+}
+
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients .client:hover {
+  background-color: #384878;
+}
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients .client:hover .name {
+  color: white;
+}
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients .client:hover .status {
+  transform: scale(1);
+}
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients .client .name {
+  width: 88%;
+  text-align: left;
+  font-size: .9rem;
+  color: white;
+  line-height: 1.1;
+}
+
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients .client .status {
+  display: flex;
+  transform: scale(0);
+  justify-content: flex-end;
+  width: 75px;
+  text-align: center;
+  transition: .25s ease-in-out;
+}
+
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients .client .status i {
+  font-size: 2rem;
+  padding: .15rem;
+  margin-right: .5rem;
+  color: white;
+  transition: .15s ease-in-out;
+}
+
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients .client .status i.fa-minus-circle:hover {
+  color: red;
+}
+.calendar-wrapper .calendar-right .card-time .schedules .scheduled .clients .client .status i.fa-pencil-square:hover {
+  color: darkturquoise;
+}
+
+

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calendar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./scrollbar.css">
+
+</head>
+<body>
+  <div class="calendar-wrapper">
+    <div class="calendar-left">
+      <img src="./calendar.png" alt="" srcset="">
+    </div>
+    <div class="calendar-right">
+      <div class="card-time closed">
+        <div class="main-time">
+          <span>00:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+
+      <div class="card-time closed">
+        <div class="main-time">
+          <span>01:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time closed">
+        <div class="main-time">
+          <span>02:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time closed">
+        <div class="main-time">
+          <span>03:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time closed">
+        <div class="main-time">
+          <span>04:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time closed">
+        <div class="main-time">
+          <span>05:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>06:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>07:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>08:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+
+
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>09:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules">
+          <div class="scheduled">
+            <div class="time">09:00</div>
+            <div class="clients">
+              <div class="client">
+                <div class="name" style="display: flex;">
+                  <span style="border-right: 1px solid white; padding-right:.5rem; min-width: 80px;">Central-x64</span>
+                  <span style="border-right: 1px solid white; padding: 0 .5rem; font-weight: bold; min-width: 150px;">Maria José Francisca de Moura</span>
+                  <span style="border-right: 1px solid white; padding: 0 .5rem; min-width: 80px;">Inicial</span>
+                  <span style="padding-left:.5rem; max-width: 286px;">Observação geral ou editada pelo atendente geral ou editada pelo atendente geral ou editada pelo atendente</span>
+                </div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client">
+                <div class="name">Ana Tereza de A. Vasques</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scheduled">
+            <div class="time">09:15</div>
+            <div class="clients">
+              <div class="client">
+                <div class="name" style="display: flex; flex-direction: column;">
+                  <span style="padding: .15rem 0 0 0;">Central-x64</span>
+                  <span style="font-weight: bold; padding: .15rem 0;">Brisa da Silva</span>
+                  <span style="padding: .15rem 0;">Inicial</span>
+                  <span style="padding: 0 0 .15rem 0;">Observação geral ou editada pelo atendente</span>
+                </div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client">
+                <div class="name">Debora Kaynara Patricio da Silva</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client">
+                <div class="name" style="display: flex; flex-direction: column;">
+                  <span style="padding: .25rem 0; border-bottom: 1px solid #ffffff26;">Central-x64</span>
+                  <span style="font-weight: bold; padding: .25rem 0; border-bottom: 1px solid #ffffff26;">Gláucia Adriana Dantas</span>
+                  <span style="padding: .25rem 0;border-bottom: 1px solid #ffffff26;">Inicial</span>
+                  <span style="padding: .25rem 0;">Observação geral ou editada pelo atendente</span>
+                </div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>10:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+
+
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>11:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules">
+          <div class="scheduled">
+            <div class="time">11:15</div>
+            <div class="clients">
+              <div class="client">
+                <div class="name">Isabele Acciolo P. Lima</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client">
+                <div class="name">Ivausck Maria L. da Costa</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scheduled">
+            <div class="time">11:30</div>
+            <div class="clients">
+              <div class="client">
+                <div class="name">Joane Maria da Silva Carvalho</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client">
+                <div class="name">Kalyne Ribeiro Dantas Q. de Vasconcelos</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client">
+                <div class="name">Kênia Stephanie Nunes Arruda</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scheduled">
+            <div class="time">11:45</div>
+            <div class="clients">
+              <div class="client">
+                <div class="name">Lorena Alcântara de Farias</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>12:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      
+      
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>13:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules">
+          <div class="scheduled">
+            <div class="time">13:00</div>
+            <div class="clients">
+              <div class="client">
+                <div class="name">Luana Nascimento dos Santos</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scheduled">
+            <div class="time">13:35</div>
+            <div class="clients">
+              <div class="client">
+                <div class="name">Lucicleide Silva Freire Alves de Oliveira</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>14:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>15:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>16:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>17:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>18:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules">
+          <div class="scheduled">
+            <div class="time">18:15</div>
+            <div class="clients">
+              <div class="client">
+                <div class="name">Luisa Raquel Teixeira de Araújo</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scheduled">
+            <div class="time">18:30</div>
+            <div class="clients">
+              <div class="client">
+                <div class="name">Maria Conceição da S. Souza</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scheduled">
+            <div class="time">18:45</div>
+            <div class="clients">
+              <div class="client">
+                <div class="name">Maria Gisele da Silva de Oliveira</div>
+                <div class="status">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>19:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>20:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time">
+        <div class="main-time">
+          <span>21:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time closed">
+        <div class="main-time">
+          <span>22:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+
+      <div class="card-time closed">
+        <div class="main-time">
+          <span>23:00</span>
+        </div>
+        <div class="add-client" href="#modal-add-schedule" uk-toggle>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </div>
+        <div class="schedules"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-add-schedule" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <div class="uk-modal-header">
+          <h2 class="uk-modal-title">Adicionar Agendamento</h2>
+      </div>
+      <div class="uk-modal-body">
+        <form>
+          <fieldset class="uk-fieldset">
+            <div class="uk-margin">
+              <div class="uk-button-group">
+                <button class="uk-button uk-button-primary" style="border: 1px solid white;">08:00</button>
+                <button class="uk-button uk-button-primary" style="border: 1px solid white;">08:15</button>
+                <button class="uk-button uk-button-primary" style="border: 1px solid white;">08:45</button>
+              </div>
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input" type="text" placeholder="Nome do Cliente">
+            </div>      
+            <div class="uk-margin">
+              <select class="uk-select">
+                <option>Selecionar Unidade</option>
+                <option>Option 01</option>
+                <option>Option 02</option>
+              </select>
+            </div>      
+            <div class="uk-margin">
+              <textarea class="uk-textarea" rows="5" placeholder="Observações"></textarea>
+            </div>      
+            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+              <label><input class="uk-radio" type="radio" name="radio2" checked> Inicial</label>
+              <label><input class="uk-radio" type="radio" name="radio3"> Intermediária</label>
+              <label><input class="uk-radio" type="radio" name="radio3"> Final</label>
+            </div>      
+          </fieldset>
+        </form>
+      </div>
+      <div class="uk-modal-footer uk-text-right">
+          <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+          <button class="uk-button uk-button-primary" type="button">Adicionar</button>
+      </div>
+  </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
